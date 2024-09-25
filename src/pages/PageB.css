@@ -1,0 +1,16 @@
+/* src/pages/PageB.css */
+.page-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 2em;
+    color: #333;
+}
+
+.page-description {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #666;
+}

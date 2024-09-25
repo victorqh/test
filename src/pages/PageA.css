@@ -1,0 +1,100 @@
+/*PageA.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import '../components/animations.css';
+
+/* Colores */
+:root {
+    --fondo-oscuro: #0a2540; /* Color de fondo similar al de la página mencionada */
+    --texto-principal: #e2b26c;
+    --fondo-secundario: #444444;
+    --boton-hover: #6c8ee2;
+    --resaltado: #1e5170; /* Nuevo color para resaltar */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a2540, #11576e); /* Aplicar el efecto de degradado */
+    color: var(--texto-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page-container {
+    padding: 2rem;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--texto-principal);
+}
+
+.page-description {
+    font-size: 1rem;
+    color: var(--texto-principal);
+}
+
+.logo {
+    height: 250px;
+    margin: 0 2rem;
+    max-width: 500px;
+    border: 2px solid var(--fondo-secundario);
+    border-radius: 50%;
+    animation: breathing 3s ease-in-out infinite;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: var(--texto-principal);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--boton-hover);
+}
+
+/* PageA.css */
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text-section,
+    .form-section {
+        width: 100%;
+    }
+
+    .logo {
+        height: 200px; /* Reducir el tamaño del logo en pantallas más pequeñas */
+    }
+}

@@ -1,0 +1,72 @@
+/*RegistrationForm.css */
+
+.RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #e2b26c; /* Color de enfoque */
+    outline: none;
+    box-shadow: 0 0 8px rgba(226, 178, 108, 0.5);
+}
+
+.error-input {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+.submit-button {
+    padding: 12px 25px;
+    background-color: #e2b26c; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c99a5a; /* Color del botón al pasar el ratón */
+}
+
+.general-error {
+    color: red;
+    margin-top: 10px;
+    font-size: 1em;
+}
