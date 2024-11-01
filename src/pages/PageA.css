@@ -1,20 +1,14 @@
-/*PageA.css */
+/* src/pages/PageA.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import '../components/animations.css';
 
 /* Colores */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+.pagea-body {
+
     background: linear-gradient(135deg, #0a2540, #11576e); /* Aplicar el efecto de degradado */
-    color: #e2b26c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Alternativa */
+
 }
 
 

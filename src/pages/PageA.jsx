@@ -1,3 +1,5 @@
+// src/pages/PageA.jsx
+import { useEffect } from 'react';
 import './PageA.css';
 import logo from '../assets/contadorlogo.svg';
 import RegistrationForm from '../components/RegistrationForm.jsx';
@@ -5,6 +7,13 @@ import { useNavigate } from 'react-router-dom';
 
 const PageA = () => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.body.classList.add('pagea-body');
+        return () => {
+            document.body.classList.remove('pagea-body');
+        };
+    }, []);
 
     const handleCornerClick = () => {
         navigate('/pageb');
